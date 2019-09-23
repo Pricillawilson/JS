@@ -2,7 +2,7 @@ console.log("loaded");
 document.writeln("loaded")
 paper.install(window);
 paper.setup(document.getElementById('mainCanvas'));
-var c= Shape.Circle(200,200,50);
+var c= Shape.Circle(100,100,50);
 c.fillColor='green';
 paper.view.draw();
 var d;
@@ -12,8 +12,16 @@ for(var x=25;x<400;x+=50){
         d.fillColor='blue';
     }
 }
-var tool=new tool();
-tool.onMousDown=function(event){
+/*var tool=new Tool();
+tool.onMouseDown=function(event){
     var e=Shape.Circle(event.point.x,event.point.y,30);
     e.fillColor='yellow';
-};
+};*/
+var f=Shape.Circle(100,450,40);
+f.fillColor='black';
+var text=new PointText(100,450);
+text.justification='center';
+text.fillColor='white';
+text.fontSize=20;
+text.content='hey all';
+//paper.view.draw();
