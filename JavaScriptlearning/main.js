@@ -46,5 +46,51 @@ console.log(a1[0]);
 console.log(a2[1]);
 console.log(a3[0]['name']);
 console.log(a4[0][1]);
-//console.log();
+console.log(a4.length);
+console.log(a2[a2.length-1]);
+a2[3]="star";
+console.log(a2);
+const now=new Date();
+console.log(now);
+const hallowen=new Date(2016,9,31);
+const hallowenparty=new Date(2016,9,31,19,0);
+console.log(hallowenparty.getFullYear());
+console.log(hallowenparty.getMonth());
+console.log(hallowenparty.getDate());
+console.log(hallowenparty.getHours());
+console.log(hallowenparty.getMinutes());
+const numStr="33.33";
+const num=Number(numStr);
+const a=parseInt("16 volts",10);// "volts" is ignored,16 is parsed in base10
+const b=parseInt("3a",16);//parse hexadecimal 3a
+const cf=parseFloat("15.5 kph");//parseFloat always assume base 10
+console.log(num);
+console.log(a);
+console.log(b);
+console.log(cf);
+const str=num.toString();
+console.log(str);
+const arr=[1,true,"hello"];
+console.log(arr.toString());
+const n=0;
+const b1=!!n;
+const b2=Boolean(n);
+console.log(b1);
+console.log(b2);
+let funds=50;
+while(funds>1 && funds<100)
+{
+    funds=funds+5;
+    funds=funds-1;
+    console.log(funds);
+}
+if(funds > 90)
+console.log("There's money left!");
+else {
+console.log("I'm broke");
+console.log("Time to quit.");
+}
+
+
+
 

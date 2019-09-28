@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<!-- <p id="demo">JavaScript can change HTML content.</p> -->
+<p id="p1"></p>
+<!-- <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button> -->
+<!-- <script>document.write(5+6);</script> -->
+  <!-- <button type="button" onclick='document.write(5+6)'>Try it</button>   -->
+ <!-- <script>
+     function mul(p1,p2){
+         return p1*p2;
+     }
+    document.getElementById("p1").innerHTML=mul(4,3);
+ </script> -->
+ <!-- <p id="demo"></p>
+
+ <script>
+ // Create an object:
+ var person = {
+   firstName: "John",
+   lastName : "Doe",
+   id     : 5566,
+   fullName : function() {
+     return this.firstName + " " + this.lastName;
+   }
+ };
+ 
+ // Display data from the object:
+ document.getElementById("demo").innerHTML = person.fullName();
+ </script> -->
+
+<p id="demo"></p>
+
+<!---<script>
+var  x = 10;
+// Here x is 10
+{  
+  let x = 2;
+  // Here x is 2
+}
+// Here x is 2
+document.getElementById("demo").innerHTML = x;
+</script> -->
+<!-- <script>
+        // Create an Array:
+        const cars = ["Saab", "Volvo", "BMW"];
+        
+        // Change an element:
+        cars[0] = "Toyota";
+        
+        // Add an element:
+        cars.push("Audi");
+        
+        // Display the Array:
+        document.getElementById("demo").innerHTML = cars; 
+        </script> -->
+<!-- <script>var hello;
+hello=(val)=>"Hello"+val;
+document.getElementById("demo").innerHTML=hello('Universe');
+</script> 
+<script>
+        var hello;
+        
+        hello = () => "Hello World!";
+        
+        document.getElementById("demo").innerHTML = hello();
+        </script>  
+<script>
+        var hello;
+        
+        hello = () => {
+          return "Happy days!";
+        }
+        
+        document.getElementById("demo").innerHTML = hello();
+        </script>       -->
+        <!-- <script>
+                class Car {
+                  constructor(brand) {
+                    this.carname = brand;
+                  }
+                }
+                
+                mycar = new Car("Ford");
+                
+                document.getElementById("demo").innerHTML = mycar.carname;
+                </script>
+                <script>
+                        class Car {
+                          constructor(brand) {
+                            this.carname = brand;
+                          }
+                          present() {
+                            return "I have a " + this.carname;
+                          }
+                        }
+                        
+                        mycar = new Car("Ford");
+                        
+                        document.getElementById("demo").innerHTML = mycar.present();
+                        </script> -->
+                        <!-- Your Good Name:<input type="text" onfocus="myFunction(this)">
+                        <script>
+                        function myFunction(x){
+                          x.style.background="blue";}</script>
+</body> -->
+<!-- 
+Enter your name: <input type="text" id="fname">
+
+<script>
+document.getElementById("fname").addEventListener("focus", myFunction);
+
+function myFunction() {
+  document.getElementById("fname").style.backgroundColor = "red";
+}
+</script> -->
+
+<!-- <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+  Click the text! The mouseDown() function is triggered when the mouse button is pressed down over this paragraph, and sets the color of the text to red. The mouseUp() function is triggered when the mouse button is released, and sets the color of the text to green.
+  </p>
+  
+  <script>
+  function mouseDown() {
+    document.getElementById("myP").style.color = "red";
+  }
+  
+  function mouseUp() {
+    document.getElementById("myP").style.color = "green";
+  }
+  </script> -->
+  <button onclick="getLocation()">Try It</button>
+
+<!-- <p><strong>Note:</strong> The geolocation property is not supported in IE8 and earlier versions.</p> -->
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+</html>
