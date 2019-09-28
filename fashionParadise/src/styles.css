@@ -1,1 +1,143 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+:root {
+    --primary: rgb(7, 26, 85);
+}
+
+body {
+    margin: 0;
+    font-family: 'Satisfy', cursive,'Roboto';
+    font-size: 28px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    background: var(--primary);
+    padding: 1em 0;
+    
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+header a.logo{
+    font-weight: right;
+    font-size: 1.75em;
+}
+
+header img {
+    margin-bottom: -0.8em;
+    padding: 0 1em;
+}
+
+.img-responsive {
+    width: auto;
+    height: auto;
+    max-width: 75px;
+    max-height: 75px;
+    
+}
+
+nav{
+    float: right;
+}
+nav ul{
+ list-style-type: none;
+ margin: 0;
+ margin-top: -2.0em;
+ display: flex;
+}
+nav ul li a{
+    padding: 1em;
+}
+nav ul li a:hover{
+    background-color: white;
+    color: var(--primary);
+    border-radius: 10%/15%;
+    transition: 0.2s;
+    text-decoration-style: double;
+
+}
+/* nav input[type=text]{
+    float: left;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-left: 16px;
+    
+
+}  */
+
+/* nav ul li:nth-child(2) {
+    margin-left: -10%;
+} */
+.flexbox {
+    background: linear-gradient(155deg,  rgb(7, 26, 85),  rgb(7, 26, 85),  rgb(7, 26, 85));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: -30%; */
+    /* margin-top: -10%; */
+  }
+  .search {
+    margin-left: 20px;
+    margin-top: -5%;
+  }
+  
+ 
+  
+  .search > div {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .search > div:after {
+    content: "";
+    background: white;
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    top: 40px;
+    right: 2px;
+    transform: rotate(135deg);
+    box-shadow: 1px 0  rgb(7, 26, 85);
+  }
+  
+  .search > div > input {
+    color: white;
+    font-size: 16px;
+    background: transparent;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border: solid 3px white;
+    outline: none;
+    border-radius: 35px;
+    box-shadow: 0 1px  rgb(7, 26, 85);
+    transition: width 0.5s;
+  }
+  .search > div > input::placeholder {
+    color: #efefef;
+    opacity: 1;
+  }
+  
+  .search > div > input::-ms-placeholder {
+    color: #efefef;
+  }
+  
+  .search > div > input::-ms-input-placeholder {
+    color: #efefef;
+  }
+  
+  .search > div > input:focus,
+  .search > div > input:valid {
+    width: 450px;
+  }
+  
