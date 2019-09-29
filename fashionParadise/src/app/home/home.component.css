@@ -1,0 +1,72 @@
+/* .button{
+    background-color: rgb(7, 26, 85);
+    color: white;
+    border: 5px solid white;
+    border-radius: 12px;
+    padding:16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px bold;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button:hover{
+    background-color: white;
+    color:rgb(7, 26, 85);
+    border: 5px solid rgb(7, 26, 85);
+} */
+
+/* 
+.wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
+  
+  a{
+    display: inline-block;
+    background-color: rgb(7, 26, 85);
+    padding: 16px 32px;
+    font-size: 20px bold;
+    margin:4px 2px;
+    text-decoration: none;
+    color:white;
+    border: 5px solid white;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.411), 0 6px 20px 0 rgba(0,0,0,0.411);
+    text-align: center;
+    position: relative;
+    cursor:pointer;
+    transition: 0.4s;
+    border-radius: 12px;
+  }
+  
+  a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:#fff;
+    transition: all .35s;
+  }
+  
+  a:hover{
+    color:rgb(7, 26, 85);
+    font-size: 16px Bold;
+  }
+  
+  a:hover:after{
+    width: 100%;
+  }
+  
+  
