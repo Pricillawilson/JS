@@ -1,7 +1,7 @@
 <header>
     <div class="container">
   
-      <a href="#"><img src="assets/images/lo.jpeg" class="img-responsive"></a>
+      <a href="#" routerLink="/"><img src="assets/images/lo.jpeg" class="img-responsive"></a>
       <a href="#" class="logo">Fashion Paradise</a>
       <div class="flexbox">
           <!-- <div > -->
@@ -31,9 +31,9 @@
     
   </header>
   
-  <div class="container">
+  <!-- <div class="container">
       <ngb-carousel #carousel interval="5000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
-        <!-- <ng-template ngbSlide *ngFor="let img of images; index as i">
+        <ng-template ngbSlide *ngFor="let img of images; index as i">
           <div class="carousel-caption">
             <h3>My slide {{i + 1}} title</h3>
           </div>
@@ -43,7 +43,7 @@
             </div>
           </a>
         </ng-template> -->
-        <ng-template ngbSlide>
+        <!-- <ng-template ngbSlide> 
             <div class="picsum-img-wrapper">
                 <img src="./assets/images/wc5.jpg" alt="Random first slide" class="carousel-img">
             </div>
@@ -92,7 +92,7 @@
             </div>
         </ng-template>
       </ngb-carousel>
-    </div>
+    </div> -->
   
   <div class="container">
   <router-outlet></router-outlet>
