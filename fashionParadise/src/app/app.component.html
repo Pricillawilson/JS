@@ -1,37 +1,99 @@
 <header>
-  <div class="container">
-
-    <a href="#"><img src="assets/images/lo.jpeg" class="img-responsive"></a>
-    <a href="#" class="logo">Fashion Paradise</a>
-    <div class="flexbox">
-        <!-- <div > -->
-            <div class="search">
-              <div>
-                <input type="text" placeholder="       Search . . ." required>
-              </div>
-            </div>
-          <!-- </div> -->
-          </div>
-    <nav>
-       <!-- <input type="text" placeholder="Search..">  -->
-      
-      <ul>
-      
- 
-        <li><a href="#" routerLink="/">Hot Sales</a></li>
-        <li><a href="#" routerLink="/list">Categories</a></li>
-        <li><a href="#" routerLink="/login">Login</a></li>
-       
-        
-      </ul>
-      
-      
-    </nav>
-     </div>
+    <div class="container">
   
-</header>
-
-
-<div class="container">
-<router-outlet></router-outlet>
-</div>
+      <a href="#"><img src="assets/images/lo.jpeg" class="img-responsive"></a>
+      <a href="#" class="logo">Fashion Paradise</a>
+      <div class="flexbox">
+          <!-- <div > -->
+              <div class="search">
+                <div>
+                  <input type="text" placeholder="       Search . . ." required>
+                </div>
+              </div>
+            <!-- </div> -->
+            </div>
+      <nav>
+         <!-- <input type="text" placeholder="Search..">  -->
+        
+        <ul>
+        
+   
+          <li><a href="#" routerLink="/hotsales">Hot Sales</a></li>
+          <li><a href="#" routerLink="/list">Categories</a></li>
+          <li><a href="#" routerLink="/login">Login</a></li>
+         
+          
+        </ul>
+        
+        
+      </nav>
+       </div>
+    
+  </header>
+  
+  <div class="container">
+      <ngb-carousel #carousel interval="5000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
+        <!-- <ng-template ngbSlide *ngFor="let img of images; index as i">
+          <div class="carousel-caption">
+            <h3>My slide {{i + 1}} title</h3>
+          </div>
+          <a href="https://www.google.fr/?q=Number+{{i+1}}" target="_blank" rel="nofollow noopener noreferrer">
+            <div class="picsum-img-wrapper">
+              <img [src]="img" alt="My image {{i + 1}} description" class="carousel-img">
+            </div>
+          </a>
+        </ng-template> -->
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img src="./assets/images/wc5.jpg" alt="Random first slide" class="carousel-img">
+            </div>
+            <div class="carousel-caption">
+              
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img src="./assets/images/wc7.jpg" alt="Random first slide" class="carousel-img">
+            </div>
+            <div class="carousel-caption">
+              
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img src="./assets/images/wc4.jpg" alt="Random first slide" class="carousel-img">
+            </div>
+            <div class="carousel-caption">
+              
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img src="./assets/images/wc2.jpg" alt="Random first slide" class="carousel-img">
+            </div>
+            <div class="carousel-caption">
+              
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img src="./assets/images/c7.jpg" alt="Random first slide" class="carousel-img">
+            </div>
+            <div class="carousel-caption">
+              
+            </div>
+        </ng-template>
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img src="./assets/images/c6.jpg" alt="Random first slide" class="carousel-img">
+            </div>
+            <div class="carousel-caption">
+              
+            </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+  
+  <div class="container">
+  <router-outlet></router-outlet>
+  </div>
